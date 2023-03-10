@@ -1,0 +1,526 @@
+@import "media.sass"
+
+@font-face 
+    font-family: "SF Pro Display"
+    src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Light.woff")
+    src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Light.woff?#iefix")format("embedded-opentype"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Light.woff") format("woff"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Light.woff") format("truetype")
+    font-style: normal
+    font-weight: 300
+
+@font-face 
+  font-family: "SF Pro Display"
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Regular.woff")
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Regular.woff?#iefix")format("embedded-opentype"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Regular.woff") format("woff"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Regular.woff") format("truetype")
+  font-style: normal
+  font-weight: 400
+
+@font-face 
+  font-family: "SF Pro Display"
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Semibold.woff")
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Semibold.woff?#iefix")format("embedded-opentype"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Semibold.woff") format("woff"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Semibold.woff") format("truetype")
+  font-style: normal
+  font-weight: 700
+
+@font-face 
+  font-family: "SF Pro Display"
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Bold.woff")
+  src: url("../assets/font/SFProDisplay-woff/SFProDisplay-Bold.woff?#iefix")format("embedded-opentype"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Bold.woff") format("woff"),url("../assets/font/SFProDisplay-woff/SFProDisplay-Bold.woff") format("truetype")
+  font-style: normal
+  font-weight: 900
+
+*
+    font-family: 'SF Pro Display',
+
+body
+    background: white
+
+a 
+    text-decoration: none
+
+section
+    padding: 40px 0
+
+p
+    margin: 0
+    
+.mini-title
+    margin-top: 30px 
+    display: flex
+    justify-content: center
+    align-items: center
+    h4
+        font-size: 20px
+        line-height: 130%
+        font-weight: 500
+header
+    padding-bottom: 10px
+    border-bottom: 1px solid black
+
+.header-up
+    display: flex
+    justify-content: space-between
+    padding: 20px 0
+    align-items: center
+
+.header-search 
+    display: flex
+    gap: 15px
+    align-items: center
+    button
+        border: none
+        background: transparent
+        height: 28px
+
+
+.header-down
+    margin-top: 10px
+
+.header__swiper
+    display: flex
+
+.headerSwiper-control
+    display: flex
+    gap: 12px
+
+
+.header-nav
+    display: flex
+    justify-content: space-between
+    padding: 0
+    width: 90%
+    li
+        list-style: none
+        a
+            text-decoration: none
+            font-size: 14px
+            line-height: 100%
+            font-weight: 400
+            color: #000
+
+
+    
+.carousel
+    height: 460px
+
+
+.inner-carousel 
+    height: 100%
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        filter: brightness(0.5)
+        border-radius: 6px
+
+.swiper-slide
+    position: relative
+
+.mainSwiper-control
+    position: absolute
+    display: flex
+    gap: 5px
+    right: 30px
+    top: 30px
+    z-index: 1
+
+.news-info
+    width: 80%
+    position: absolute
+    z-index: 1
+    bottom: 30px
+    left: 30px     
+    p
+        font-size: 14px
+        line-height: 130%
+        font-weight: 400
+        color: #5A99C3
+        text-decoration: none
+    h4
+        font-size: 26px
+        line-height: 130%
+        font-weight: 800
+        color: #fff
+    span
+        display: flex
+        align-items: center
+        gap: 10px
+        font-size: 18px
+        line-height: 120%
+        color: #B2AEAB
+
+.aqparat-title
+    margin-bottom: 20px    
+    font-weight: 800
+    font-size: 24px
+    line-height: 130%
+
+.aqparat-info-block
+    padding-bottom: 15px
+    margin-bottom: 20px
+    border-bottom: 1px solid #F5F5F5
+    display: flex
+    gap: 20px
+
+.aqparat-info-text
+    // width: 40%
+    .info-text-category
+        font-size: 14px
+        line-height: 130%
+        font-weight: 400
+        color: #5A99C3
+        text-decoration: none
+    h3
+        font-size: 16px
+        line-height: 130%
+        font-weight: 500
+        color: #000000
+        
+    span
+        display: flex
+        align-items: center
+        gap: 10px
+        font-size: 15px
+        line-height: 120%
+        color: #B2AEAB
+
+// banner
+
+.header-banner
+    margin-top: 30px
+
+.inner-banner 
+    width: 100%
+    img
+        width: 100%
+        height: 300px
+        object-fit: cover
+
+// secondary
+
+.secondary-content-title
+    font-size: 22px
+    line-height: 130%
+    font-weight: 800
+    padding-bottom: 10px
+    border-bottom: 1px solid #864925
+    margin-bottom: 30px
+
+.secondary-wrapper
+    display: flex
+    gap: 30px
+    .secondary-block
+        &:first-child
+            width: 55%
+            &img
+                width: 100%
+            
+.all-big-news
+    position: relative
+    padding-bottom: 20px
+    margin-bottom: 25px
+    border-bottom: 1px solid #F5F5F5
+    img
+        width: 100%
+        object-fit: cover
+        filter: brightness(0.5)
+    
+.big-news-info
+    position: absolute
+    left: 20px
+    bottom: 30px
+    p
+        text-transform: uppercase
+        font-size: 14px
+        line-height: 100%
+        color: #f5f5f5
+        font-weight: 400
+        margin-bottom: 14px
+    h4
+        font-size: 22px
+        color: #FFFFFF
+        line-height: 120%
+        font-weight: 700
+    span
+        font-size: 14px
+        line-height: 120%
+        color: #B2AEAB
+
+
+.all-extra-news
+    margin-bottom: 30px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 30px
+
+.extra-news-item
+    img
+        margin-bottom: 12px
+        width: 100%
+        object-fit: cover
+
+.extra-news-info
+    margin-top: 12px
+    .info-text-category
+        font-size: 14px
+        line-height: 130%
+        font-weight: 400
+        color: #5A99C3
+        text-decoration: none
+    h3
+        font-size: 18px
+        line-height: 120%
+        font-weight: 500
+        color: #000000
+    span
+        display: flex
+        align-items: center
+        gap: 10px
+        font-size: 14px
+        line-height: 120%
+        color: #B2AEAB
+        img
+            width: 14px
+            height: 14px
+
+.secondary-block
+        &:nth-child(2)
+            width: 45%
+
+
+.right-news-item
+    // width: 270px
+    height: 160px
+    display: flex
+    gap: 30px
+    // padding-bottom: 20px
+    margin-bottom: 25px
+    border-bottom: 1px solid #F5F5F5
+    
+.right-news-video
+    width: 100%
+    position: relative
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+    .video-news
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        
+    
+.right-news-info
+    width: 100%
+    .info-text-category
+        font-size: 14px
+        line-height: 100%
+        font-weight: 400
+        color: #5A99C3
+        text-decoration: none
+    h3
+        font-size: 20px
+        line-height: 120%
+        font-weight: 500
+        color: #000000
+    span
+        display: flex
+        align-items: center
+        gap: 10px
+        font-size: 14px
+        line-height: 120%
+        color: #B2AEAB
+
+// footer
+footer
+    bottom: 0
+    background: #000000 !important
+
+.footer-top
+    padding: 30px 0 20px 0
+    border-bottom: 1px solid  #666666
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.footer-logo
+    display: flex
+    align-items: center
+    gap: 11px
+    a
+        font-size: 18px
+        line-height: 130%
+        text-decoration: none
+        color: #fff
+
+.footer-nav
+    display: flex
+    gap: 15px
+    align-items: center
+    margin: 0
+    li
+        list-style: none
+
+.footer-down
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 0 30px 0
+.footer-menu
+    display: flex
+    gap: 47px
+    padding: 0
+    margin-bottom: 0
+    li
+        list-style: none
+        a
+            font-size: 14px
+            font-weight: 400
+            line-height: 100%
+            text-decoration: none
+            color: #FFFFFF
+      
+.privacy
+    display: flex
+    align-items: center
+    a   
+        font-size: 14px
+        font-weight: 400
+        line-height: 100%
+        color: #B8B8B8
+
+// news
+
+.news-path
+    padding-left: 0 
+    display: flex
+    li
+        list-style: none
+        a   
+            color: #B2AEAB
+            text-decoration: none
+            font-size: 12px
+            line-height: 130%
+            font-weight: 400
+        .active
+            margin-left: 8px
+            color: #222 !important
+            text-decoration: none
+            font-size: 12px
+            line-height: 130%
+            font-weight: 400    
+
+.news-main-title
+    h2
+        color: #222 !important
+        text-decoration: none
+        font-size: 40px
+        line-height: 130%
+        font-weight: 800
+
+.basic-info
+    display: flex
+    gap: 15px
+    span
+        display: flex
+        gap: 10px
+        font-size: 14px
+        line-height: 120%
+        color: #B2AEAB
+        font-weight: 400
+
+.news-photo
+    margin-top: 30px
+    img
+        width: 100%
+        object-fit: cover
+
+.news-photo-wrapper
+    padding-bottom: 30px
+    border-bottom: 1px solid #F5F5F5    
+
+.news-text
+    h4
+        font-size: 22px
+        line-height: 130%
+        margin-top: 30px
+    blockquote
+        padding-left: 18px
+        font-size: 16px
+        line-height: 130%
+    p
+        margin-bottom: 20px
+        font-size: 20px
+        line-height: 130%
+        font-weight: 400       
+
+.link-social
+    display: flex
+    gap: 10px
+    margin-top: 20px
+    a
+        img
+            width: 40px
+            height: 40px
+            object-fit: cover
+
+.extra-title
+    margin-top: 30px
+    h4
+        font-size: 30px
+        line-height: 39px
+        font-weight: 800
+        color: #222
+
+.inner-extra-news
+    margin-top: 30px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 30px
+    .extra-news-item
+        &img
+            width: 270px
+            height: 160px
+
+// position
+
+.rules
+    .rules-title
+        margin-top: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        h4
+            font-size: 20px
+            line-height: 130%
+            font-weight: 500
+    .rules-text
+        p   
+            margin-bottom: 15px
+            font-size: 18px
+            line-height: 130%
+            font-weight: 400
+
+.contacts-info-item
+    display: flex
+    gap: 150px
+
+table th, td
+    padding: 10px 0 
+
+table td
+    p   
+        display: flex
+        gap: 10px
+        &:not(:first-child) 
+            margin-top: 10px
+
+table tr th 
+    vertical-align: baseline
+    width: 45%
+        
